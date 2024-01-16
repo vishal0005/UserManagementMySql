@@ -1,0 +1,18 @@
+{
+  "name": "usermanagementsql",
+  "version": "1.0.0",
+  "description": "user management using sql",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon app.js",
+    "test": ""
+  },
+  "author": "Vishal",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "express": "^4.18.2",
+    "jshint": "^2.13.6",
+    "mysql": "^2.18.1"
+  }
+}
