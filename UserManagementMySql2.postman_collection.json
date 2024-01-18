@@ -1,0 +1,159 @@
+{
+	"info": {
+		"_postman_id": "b4da4104-0117-44e8-ad16-b92f55784b0f",
+		"name": "UserManagementMySql2",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "26893628"
+	},
+	"item": [
+		{
+			"name": "Welcome",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base}}/user",
+					"host": [
+						"{{base}}"
+					],
+					"path": [
+						"user"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get users",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base}}/user/getAllUser",
+					"host": [
+						"{{base}}"
+					],
+					"path": [
+						"user",
+						"getAllUser"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "add user",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\" : \"Vishalss\",\n    \"email\" : \"vishal@gmail.com\",\n    \"password\" : \"5665645\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base}}/user/addUser",
+					"host": [
+						"{{base}}"
+					],
+					"path": [
+						"user",
+						"addUser"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "udpate user",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\" : \"40\",\n    \"name\" : \"Vishal\",\n    \"email\" : \"vishal@gmail.com\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base}}/user/udpateUser",
+					"host": [
+						"{{base}}"
+					],
+					"path": [
+						"user",
+						"udpateUser"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete user from id",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\" : \"Vishalss\",\n    \"email\" : \"vishalssv@gmail.com\",\n    \"password\" : \"5665645\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base}}/user/deleteUser?id=19",
+					"host": [
+						"{{base}}"
+					],
+					"path": [
+						"user",
+						"deleteUser"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "19"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete all users",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base}}/user/deleteAllUser",
+					"host": [
+						"{{base}}"
+					],
+					"path": [
+						"user",
+						"deleteAllUser"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
