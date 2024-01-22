@@ -6,7 +6,7 @@ class UserController {
         console.log("welcome req");
         return res.status(200).json({
             status: true,
-            message: "Welcome to api updated"
+            message: "Welcome to api"
         });
     }
 
